@@ -24,7 +24,7 @@ export function ScrollRevealButton({
 
       // Show button when user is near the bottom (e.g., 80% scrolled)
       const scrollPercentage = (scrollTop + clientHeight) / scrollHeight;
-      setIsVisible(scrollPercentage > 1);
+      setIsVisible(scrollPercentage > .95);
     };
 
     window.addEventListener('scroll', handleScroll);
