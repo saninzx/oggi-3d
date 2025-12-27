@@ -1,0 +1,14 @@
+// ProductPage.jsx
+import ProductDetails from './components/ProductDetails';
+import ProductViewer3D from './features/3d-scene/ProductViewer';
+
+export default function ProductPage() {
+  return (
+    <div className="grid grid-cols-2">
+      <ProductDetails />
+      <div className="h-[500px]"> {/* Container must have height */}
+         <ProductViewer3D /> {/* Contains the <Canvas> */}
+      </div>
+    </div>
+  );
+}
